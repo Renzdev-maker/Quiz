@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.login, .quiz, .result {
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  background: white;
+}
+
+/* HEADER */
+.header {
+  background: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 20px;
+}
+
+/* CARD */
+.card {
+  padding: 20px;
+}
+
+/* BUTTONS */
+.btn {
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ddd;
+  font-size: 18px;
+}
+
+.correct { background: #4CAF50 !important; color: white; }
+.wrong { background: #f44336 !important; color: white; }
+
+/* LOGIN */
+.login {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.login input {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* HIDE */
+.hidden { display: none; }
+
+/* 💖 HEART */
+.heart {
+  position: fixed;
+  font-size: 20px;
+  color: red;
+  animation: floatUp 2s forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-200px); opacity: 0; }
+}
+
+/* 💔 SHAKE */
+.shake {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
